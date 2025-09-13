@@ -13,10 +13,37 @@
             color: #333;
         }
 
-        h1 {
-            color: #2c3e50;
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
             text-align: center;
-            margin-bottom: 20px;
+        }
+
+        nav {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        nav h2 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        nav a {
+            display: block;
+            color: #2980b9;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .objective {
@@ -29,6 +56,17 @@
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
             font-size: 18px;
         }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -36,9 +74,18 @@
     <script>
         alert("Welcome to the boards of my degree.")
     </script>
-    <h1>GP Degree Objectives</h1>
+    
+    <nav>
+        <h2>Navigation</h2>
+        <a href="index.html">Home</a><br>
+        <a href="boards.html">Boards</a><br>
+    </nav>
 
-    <!-- Each objective as its own styled paragraph -->
+    <header>
+        <h1>Game Programming Degree Objectives</h1>
+    </header>
+
+    
     <p class="objective">Implement multiple completed games, including 3D games, using common tools, languages and software for web, console, PC or multiple platforms.</p>
     <p class="objective">Design, develop and implement the architecture and infrastructure needed to support a complete-game project.</p>
     <p class="objective">Implement and analyze fundamental data structures and algorithms associated with game applications supporting gameplay mechanics.</p>
@@ -46,6 +93,13 @@
     <p class="objective">Demonstrate development skills using multiple programming languages, development environments and platforms, including advanced and/or experimental topics in game programming.</p>
     <p class="objective">Establish collaboration, mentorship and professional leadership skills by working with other disciplines to deliver highly polished and completed projects.</p>
     
+    <footer>
+        Dain Wiseman<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br>
+    </footer>
+
 </body>
 
 </html>
