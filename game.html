@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- This declares that this is an HTML 5 document-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quark's Casino – High Card</title>
+
+  <!-- this gives it a little bit of a casino vibe-->
+  <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 16px; 
+        background:#0e1116; 
+        color:#e9f1ff; 
+    }
+
+    h1 { 
+        margin: 0 0 8px; 
+    }
+
+    .small { 
+        color:#a8c6e6; 
+        margin: 0 0 16px; 
+    }
+
+    .box { 
+        border:1px solid #233244; 
+        border-radius:8px; 
+        padding:12px; 
+        background:#121826; 
+    }
+
+    form { 
+        display:grid; 
+        grid-template-columns: 1fr auto; 
+        gap:8px; 
+        margin-top:12px; 
+    }
+
+    input { 
+        padding:8px; 
+        border-radius:6px; 
+        border:1px solid #2a3b52; 
+        background:#0e141f; 
+        color:#e9f1ff; 
+    }
+
+    button { 
+        padding:10px 14px; 
+        border:0; 
+        border-radius:6px; 
+        background:#1bb36b; 
+        color:#052b1b; 
+        font-weight:bold; 
+        cursor:pointer; 
+    }
+
+    button:hover { 
+        background:#16c377; 
+    }
+
+    .row { 
+        display:grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap:8px; 
+        margin-top:10px; 
+    }
+
+    .result { 
+        margin-top:10px; 
+        font-weight:bold; 
+    }
+
+    .win { 
+        color:#74ffb5; 
+    }
+
+    .lose { 
+        color:#ff9a9a; 
+    }
+
+    .push { 
+        color:#ffd27a; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Quark's Casino</h1>
+  <p class="small">High Card Draw</p>
+
+  <!-- Player bankroll and messages -->
+  <div id="bankrollBar" class="box"></div>
+  <div id="messages" class="box" style="margin-top:8px;"></div>
+
+  <!-- Input form for betting -->
+  <form id="gameForm" class="box" style="margin-top:8px;">
+    <div>
+      <label for="bet">Bet (credits)</label>
+      <input id="bet" name="bet" type="number" min="1" step="1" placeholder="e.g., 10" required>
+    </div>
+    <button type="submit">Play Hand</button>
+  </form>
+
+  <!-- Card display -->
+  <div class="row" style="margin-top:8px;">
+    <div class="box">
+      <strong>Your Card</strong>
+      <div id="playerCard" style="font-size:2rem; margin-top:6px;"></div>
+    </div>
+    <div class="box">
+      <strong>Dealer's Card</strong>
+      <div id="dealerCard" style="font-size:2rem; margin-top:6px;"></div>
+    </div>
+  </div>
+
+  <!-- Round result -->
+  <div id="handResult" class="result"></div>
+
+  <script src="code.js"></script>
+</body>
+</html>
+
