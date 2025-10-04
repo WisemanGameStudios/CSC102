@@ -27,10 +27,28 @@
             </nav>
         </header>
 
-            <!-- This is the paragraph tag -->
+        <!-- area for innerHTML messages-->
+        <p id="statusMsg"><!-- Messages display here --></p>
+
+
+        <!-- This meme will move around -->
         <p>
-            <img id="meme" src="meme.jpg">
+            <img id="meme" src="meme.jpg" alt="Meme">
         </p>
+
+        <!-- This section will display the buttons -->
+         <p style="text-align:center;">
+            <form id="startForm" style="display:inline-block; margin:0 10px;">
+                <!-- Speed Settings -->
+                 <label for="speedInput">Speed:</label>
+                 <input id="speedInput" name="speed" type="number" min="50" max="2000" step="50" value="300">
+                 <button id="startBtn" type="submit">Start</button>
+            </form>
+
+            <form id="stopForm" style="display:inline-block; margin:0 10px;">
+                <button id="stopBtn" type="submit" disabled>Stop</button>
+            </form>
+         </p>
 
         <footer>
             Dain Wiseman<br>
@@ -38,6 +56,6 @@
             2625 W Baseline Rd<br>
             Tempe, AZ 85283<br>
         </footer>
-        
+        <script src="main.js"></script>
     </body>
 </html>
