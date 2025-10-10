@@ -1,0 +1,50 @@
+<!-- Dain Wiseman | 10/09/2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Palindrome Checker</title>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main class="card" role="main" aria-labelledby="title">
+   
+    <h1 id="title">Palindrome Checker</h1>
+    
+    <p class="tip">We ignore <strong>spaces</strong> and case. Try <em>race car</em> or <em>Never odd or even</em>.</p>
+
+    
+    <form id="palForm" autocomplete="off">
+      <label for="palInput">Enter word or phrase</label>
+      <input id="palInput" name="palInput" type="text" placeholder="e.g., race car" required />
+      <button type="submit" class="btn">Check</button>
+    </form>
+
+    
+    <div id="result" aria-live="polite"></div>
+
+    
+    <form id="loopForm">
+      <div class="row">
+        
+      </div>
+    </form>
+
+    
+    <div id="doneMsg" class="tiny"></div>
+  </main>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
