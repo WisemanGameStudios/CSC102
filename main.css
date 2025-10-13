@@ -1,14 +1,6 @@
-/* 
-Declaration block:
-
-Selector {
-    property: value;
-    property 2: value;
-}
-*/
-
 /* Dain - 9/14/2025 */
 
+/* Page background and text */
 body {
     background-color: rgb(209, 209, 209);
     color: black;
@@ -18,14 +10,14 @@ body {
     text-align: center;
 }
 
-
+/* Header section */
 header {
     color: black;
     padding: 20px;
     text-align: center;
 }
 
-
+/* Navigation sidebar */
 nav {
     height: 600px; 
     width: 200px; 
@@ -34,6 +26,7 @@ nav {
     line-height: 30px;
 }
 
+/* Navigation links */
 nav a {
     display: inline-block;
     margin: 10px;
@@ -44,12 +37,13 @@ nav a {
     border-radius: 5px;
 }
 
+/* Hover effect for the nav links */
 nav a:hover {
     background-color: #777;
 }
 
-
-#meme {
+/* Main image */
+#meme, img {
     margin: 20px auto;
     display: block;
     width: 250px;
@@ -57,7 +51,7 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-
+/* Paragraph */
 p {
     max-width: 800px;
     margin: 20px auto;
@@ -65,11 +59,27 @@ p {
     text-align: left;
 }
 
-
+/* Footer */
 footer {
     color: black;
     padding: 15px;
     margin-top: 30px;
     text-align: center; 
     margin-right: 200px;
+}
+
+/* Sound control */
+button {
+    background-color: #2ECC40;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #01FF70;
 }
