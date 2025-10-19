@@ -1,0 +1,50 @@
+/* Dain Wiseman | 10/18/2025 */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e3f2fd;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #1565c0;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0d47a1;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+form {
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
