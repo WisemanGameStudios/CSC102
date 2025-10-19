@@ -131,3 +131,30 @@ input[type="text"]:focus {
 .tiny { font-size: 0.85rem; color: #cfe2ff; }
 
 .hidden { display: none; }
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 0;
+  background-color: #333;
+  border-bottom: 2px solid #222;
+}
+
+/* Navigation Links */
+nav a {
+  padding: 10px 18px;
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+  background-color: #777;
+}

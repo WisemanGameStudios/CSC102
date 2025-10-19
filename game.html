@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quark's Casino – High Card</title>
 
+
+
   <!-- this gives it a little bit of a casino vibe-->
   <style>
     body { 
@@ -82,12 +84,50 @@
     .push { 
         color:#ffd27a; 
     }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px 0;
+      background-color: #333;
+      border-bottom: 2px solid #222;
+    }
+
+    /* Navigation Links */
+    nav a {
+      padding: 10px 18px;
+      background-color: #555;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover Effect */
+    nav a:hover {
+      background-color: #777;
+    }
+
   </style>
 </head>
 <body>
   <h1>Quark's Casino</h1>
   <p class="small">High Card Draw</p>
 
+  <nav>
+    <a href="Index.html">Home</a>
+    <a href="game.html">Game</a>
+    <a href="palindrome.html">Palindrome</a>
+    <a href="strings.html">User Validation</a>
+    <a href="boards.html">Objectives</a>
+    <a href="table.html">Table</a>
+  </nav>
+  &nbsp;
+  &nbsp;
   <!-- Player bankroll and messages -->
   <div id="bankrollBar" class="box"></div>
   <div id="messages" class="box" style="margin-top:8px;"></div>
